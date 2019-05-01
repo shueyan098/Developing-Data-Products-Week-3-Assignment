@@ -1,0 +1,19 @@
+---
+title: "Developing Data Products Week3 Assignment"
+author: "Eng"
+date: "May 1, 2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## mtcars Plot on `r Sys.Date()`  
+
+```{r plot, eval=TRUE, message=FALSE, warning=FALSE}
+library(plotly)
+plot_ly(mtcars, x=mtcars$wt, y=mtcars$mpg, mode="markers", color = as.factor(mtcars$cyl), size = mtcars$hp)
+```
+
+## Thank you
